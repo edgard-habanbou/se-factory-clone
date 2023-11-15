@@ -1,0 +1,20 @@
+/* Menu section start */
+.header{
+    color: #fff;
+    margin-top: 4.5rem;
+    padding: 0px 22rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-img{
+    width: 180px;
+    height: 51px;
+}
+.menu-burger{
+    background-color: #363738;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* Menu section end */
