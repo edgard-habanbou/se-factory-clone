@@ -1,8 +1,8 @@
-delay = (ms) => {
+const delay = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 
-changeBgColor = (color) => {
+const changeBgColor = (color) => {
   var style = document.styleSheets[0].cssRules;
 
   // Find the rule with the desired selector
@@ -16,7 +16,7 @@ changeBgColor = (color) => {
     }
   }
 };
-changeText = async (typedText) => {
+const changeText = async (typedText) => {
   const currentText = Object.keys(texts)[currentIndex].toUpperCase();
   if (isDeleting) {
     typedText.textContent = currentText.substring(0, charIndex - 1);
