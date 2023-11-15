@@ -7,9 +7,8 @@ const changeBgColor = (color) => {
 
   // Find the rule with the desired selector
   for (var i = 0; i < style.length; i++) {
-    console.log(style[i]);
     if (
-      style[i].selectorText === ".section-1-images .img-container.img-1::before"
+      style[i].selectorText === ".sec-1-images .img-container.img-1::before"
     ) {
       style[i].style.backgroundColor = color;
       break;
