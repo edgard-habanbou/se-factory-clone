@@ -2,9 +2,9 @@ const delay = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
 const changeBgColor = (color) => {
-  var style = document.styleSheets[0].cssRules;
+  let style = document.styleSheets[0].cssRules;
 
-  for (var i = 0; i < style.length; i++) {
+  for (let i = 0; i < style.length; i++) {
     if (
       style[i].selectorText === ".sec-1-images .img-container.img-1::before"
     ) {
@@ -124,6 +124,18 @@ const showTab = (tabId) => {
 
   document.querySelector(`[data-tab="${tabId}"]`).classList.add("active");
 };
+
+const addPartners = () => {
+  const partnerDiv = document.getElementById("partners");
+
+  partners.forEach((partner) => {
+    partnerDiv.innerHTML += `
+    <div class="partner">
+    <img src="${partner.image}" alt="${partner.name}" />
+  </div>
+    `;
+  });
+};
 // to delete and add text and change color in section 1
 setInterval(() => {
   const typedText = document.getElementById("typedText");
@@ -159,13 +171,16 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
   showSlides();
+
+  // Partners section
+  addPartners();
 });
 
 // FAQ section
 document.querySelectorAll(".question-heading").forEach(function (question) {
   question.addEventListener("click", function () {
     // Toggle the display of the answer when the question is clicked
-    var answer = this.nextElementSibling;
+    let answer = this.nextElementSibling;
     answer.style.display = answer.style.display === "none" ? "block" : "none";
   });
 });

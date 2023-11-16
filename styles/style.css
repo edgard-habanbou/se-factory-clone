@@ -610,3 +610,20 @@
 .submit-contact{
     text-align: end;
 }
+/* section 8 end */
+
+/* section 9 start */
+
+.partners{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.partners img{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+/* section 9 end */

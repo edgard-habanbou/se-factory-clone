@@ -56,3 +56,17 @@ const testimonials = [
     company: "Nadeera",
   },
 ];
+const partners = [
+  { name: "Abdulaziz", image: "./assets/images/partners/abdulaziz.png" },
+  { name: "alfanar", image: "./assets/images/partners/alfanar.png" },
+  { name: "drosos", image: "./assets/images/partners/drosos.png" },
+  { name: "german", image: "./assets/images/partners/german.png" },
+  { name: "gil", image: "./assets/images/partners/gil.png" },
+  { name: "giz", image: "./assets/images/partners/giz.png" },
+  { name: "isdb", image: "./assets/images/partners/isdb.png" },
+  { name: "life", image: "./assets/images/partners/life.png" },
+  { name: "michelkhalaf", image: "./assets/images/partners/michelkhalaf.png" },
+  { name: "netherlands", image: "./assets/images/partners/netherlands.png" },
+  { name: "spark", image: "./assets/images/partners/spark.png" },
+  { name: "unicef", image: "./assets/images/partners/unicef.png" },
+];
