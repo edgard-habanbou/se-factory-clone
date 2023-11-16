@@ -627,3 +627,26 @@
 }
 
 /* section 9 end */
+
+/* section 10 start */
+.section-10-wrapper{
+    background-color: #373638;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section-10-wrapper p{
+    color: #A2997E;
+}
+.subscribe input{
+    height: 50px;
+    width: 250px;
+}
+.subscribe button{
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-color: #232323;
+}
