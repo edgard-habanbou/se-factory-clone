@@ -1,12 +1,15 @@
 // function to make the icons smaller when on a small device
 function handleMediaChange(mq) {
+  const icons = document.querySelectorAll("i");
+
   if (mq.matches) {
-    const icons = document.querySelectorAll("i");
     icons.forEach((icon) => {
       icon.classList.remove("fa-2x");
     });
   } else {
-    icon.classList.add("fa-2x");
+    icons.forEach((icon) => {
+      icon.classList.add("fa-2x");
+    });
   }
 }
 const mediaQuery = window.matchMedia("(max-width: 991px)");

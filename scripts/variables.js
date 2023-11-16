@@ -8,3 +8,9 @@ let charIndex = 0;
 let isDeleting = false;
 let currentIndex = 0;
 // Section 1 end
+const programs = {
+  FCS: "#FEC735",
+  FSW: "#29EEA6",
+  FSD: "#9864DA",
+  UIX: "#FA508F",
+};

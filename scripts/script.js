@@ -47,3 +47,48 @@ setInterval(() => {
   changeBgColor(currentColor);
   changeText(typedText);
 }, 100);
+
+// Tabs section
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".tab");
+  const tabContents = document.querySelectorAll(".tab-content");
+  const shortName = document.querySelectorAll(".short-name");
+  const programsWrapper = document.getElementById("sec-4");
+  function showTab(tabId) {
+    tabContents.forEach((content) => {
+      content.classList.remove("active");
+      programsWrapper.style.backgroundColor = programs[tabId];
+      shortName.forEach((element) => {
+        element.style.color = programs[tabId];
+      });
+      if (tabId === "FCS") {
+        content.style.borderRadius = "0 10px 10px 10px";
+      } else {
+        content.style.borderRadius = "10px";
+      }
+      content.classList.add("fade-out");
+    });
+
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+
+    const activeContent = document.getElementById(tabId);
+    setTimeout(() => {
+      activeContent.classList.remove("fade-out");
+    }, 5);
+    activeContent.classList.add("active");
+
+    document.querySelector(`[data-tab="${tabId}"]`).classList.add("active");
+  }
+
+  document.querySelector(".tabs").addEventListener("click", function (event) {
+    if (event.target.classList.contains("tab")) {
+      const tabId = event.target.getAttribute("data-tab");
+      showTab(tabId);
+    }
+  });
+
+  // Show the default tab on page load
+  showTab("FCS");
+});
