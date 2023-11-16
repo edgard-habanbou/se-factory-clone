@@ -507,3 +507,38 @@
 }
 
 /* section 6 end */
+
+/* section 7 start */
+
+.sec-5-wrapper{
+    background-color: #373638;
+    color: #FDFDFD;
+}
+.faqs{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.faqs div{
+    background-color: #232323;
+    border-radius: 20px;
+    padding: 20px;
+}
+.faqs div h2{
+    font-weight: 900;
+    margin: 20px 0px;
+}
+.faqs div ul{
+    padding: 0px 20px;
+}
+.view-all{
+    text-align: end;
+}
+.answer {
+    display: none; 
+    transition: 0.5 ease-in-out;
+}
+.question-heading{
+    cursor: pointer;
+}

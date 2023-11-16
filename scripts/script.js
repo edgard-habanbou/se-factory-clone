@@ -4,7 +4,6 @@ const delay = (ms) => {
 const changeBgColor = (color) => {
   var style = document.styleSheets[0].cssRules;
 
-  // Find the rule with the desired selector
   for (var i = 0; i < style.length; i++) {
     if (
       style[i].selectorText === ".sec-1-images .img-container.img-1::before"
@@ -160,4 +159,13 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
   showSlides();
+});
+
+// FAQ section
+document.querySelectorAll(".question-heading").forEach(function (question) {
+  question.addEventListener("click", function () {
+    // Toggle the display of the answer when the question is clicked
+    var answer = this.nextElementSibling;
+    answer.style.display = answer.style.display === "none" ? "block" : "none";
+  });
 });
