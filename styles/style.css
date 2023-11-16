@@ -195,6 +195,7 @@
         font-size: 15px;
     }
     
+    
 }
 /* section 1 end */
 
@@ -238,6 +239,10 @@
         font-size: 20px;
         font-weight: 900;
     }
+    .iframe{
+        height: 50vh;
+    }
+
 }
 /* section 2 end */
 
@@ -293,6 +298,19 @@
     }
     .other-cards div{
         flex: 1;
+    }
+    .other-cards{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cards div{
+        padding: 0px 20px 20px 20px;
+    }
+    .success-rate h2{
+        font-size: 80px;
+    }
+    .sec-3 h2{
+        font-size: 40px;
     }
 }
 /* section 3 end */
@@ -388,6 +406,15 @@
     .tab-image img{
         width: 100%;
         height: 100%;
+    }
+    .course-date{
+        flex-direction: column;
+    }
+    .course-date-text{
+        margin-top: 20px;
+    }
+    .class-desc{
+        margin: 20px 0px;
     }
 }
 
@@ -554,7 +581,11 @@
 .question-heading{
     cursor: pointer;
 }
-
+@media only screen and (max-width: 991px) {
+    .faqs{
+        padding: 30px 0px;
+    }
+}
 /* section 7 end */
 
 /* section 8 start */
@@ -610,6 +641,20 @@
 .submit-contact{
     text-align: end;
 }
+@media only screen and (max-width: 991px) {
+    .contact-us-section{
+        flex-direction: column;
+    }
+    .get-directions, .contact-form{
+        padding: 30px;
+    }
+    .contact-row{
+        flex-direction: column;
+    }
+    .contact-row .form-group{
+        width:100%;
+    }
+}
 /* section 8 end */
 
 /* section 9 start */
@@ -625,7 +670,13 @@
     height: 150px;
     margin: 20px;
 }
+@media only screen and (max-width: 991px) {
+    .partners img{
+        width: 50px;
+        height: 50px;
+    }
 
+}
 /* section 9 end */
 
 /* section 10 start */
@@ -649,4 +700,60 @@
     width: 150px;
     color: white;
     background-color: #232323;
+}
+@media only screen and (max-width: 991px) {
+    .section-10-wrapper{
+        flex-direction: column;
+        height: 200px;
+    }
+    .subscribe{
+        margin-top: 20px;
+    }
+    .subscribe button{
+        width: 100px;
+    }
+}
+/* section 10 end */
+
+/* section 11 start */
+.section-11-wrapper{
+    background-color: #232323;
+    color: #DCDEE1;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.section-11-wrapper a{
+    color: #A4A7A9;
+    text-decoration: none;
+}
+.section-11-wrapper a:hover{
+    color: white;
+}
+.links-1, .links-2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.links-2 img{
+    width: 100px;
+    height: 100px;
+}
+.links-2 i{
+    background-color: #A4A7A9;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: start;
+}
+@media only screen and (max-width: 991px) {
+    .section-11-wrapper{
+        flex-direction: column;
+    }
 }
