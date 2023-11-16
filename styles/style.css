@@ -446,3 +446,64 @@
 }
 
 /* section 5 end */
+
+/* section 6 start */
+
+.testimonial{
+    background-color: #373638;
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.testimony{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.testmonial-person img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;    
+}
+.person-image{
+    border-radius: 20px;
+    height: 400px;
+    overflow-y: hidden;
+}
+
+.person-image img{
+    height: 100%;
+    width: 100%;
+}
+
+/* testimonies amination */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* section 6 end */
