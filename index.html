@@ -17,7 +17,7 @@
     />
   </head>
   <body>
-    <div class="header">
+    <section class="header">
       <div class="logo">
         <img
           class="logo-img"
@@ -25,13 +25,12 @@
           alt="se-logo"
         />
       </div>
-      <div class="menu">
+      <div id="menu-btn">
         <button class="menu-burger">
           <i class="fa-solid fa-bars fa-2x" style="color: #ffffff"></i>
-          <!-- <img src="./assets/svgs/Menu.svg" class="svg" alt="menu" /> -->
         </button>
       </div>
-    </div>
+    </section>
     <section class="sec-1">
       <div class="sec-1-images">
         <div class="img-container img-1">
@@ -716,6 +715,59 @@
           <i class="fa-brands fa-facebook"></i>
         </div>
         <a href="#">Privacy policy</a>
+      </div>
+    </section>
+    <section id="nav" class="menu hidden">
+      <div class="menu-container">
+        <div class="menu-1">
+          <div class="logo">
+            <img
+              class="logo-img"
+              src="./assets/images/se-logo (2).png"
+              alt="se-logo"
+            />
+          </div>
+          <div class="menu-body">
+            <ul>
+              <li><a href="#">Hello world!</a></li>
+              <li><a href="#">Milestones</a></li>
+              <li><a href="#">Programs</a></li>
+              <li><a href="#">Hire Talent</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu-2">
+          <div id="close-btn" class="close-btn">
+            <i class="fa-solid fa-times fa-2x" style="color: #ffffff"></i>
+          </div>
+          <div class="account">
+            <div>
+              <h2><span class="fsw-color">></span> Account</h2>
+              <p>
+                /* Login with existing or create a new account in order to apply
+                to SEF programs */
+              </p>
+            </div>
+            <div>
+              <button class="login">LOG IN</button>
+              <button>SIGN UP</button>
+            </div>
+          </div>
+          <div class="hr-factory">
+            <div class="hr-factory-img">
+              <img src="./assets/svgs/hr-factory2.svg" alt="hr-factory" />
+            </div>
+            <div>
+              <h2>Global Companies, Meet Lebanese Talent</h2>
+              <p>all you need to Launch a Local Team</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <script src="./scripts/variables.js"></script>

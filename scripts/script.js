@@ -179,8 +179,18 @@ document.addEventListener("DOMContentLoaded", function () {
 // FAQ section
 document.querySelectorAll(".question-heading").forEach(function (question) {
   question.addEventListener("click", function () {
-    // Toggle the display of the answer when the question is clicked
     let answer = this.nextElementSibling;
     answer.style.display = answer.style.display === "none" ? "block" : "none";
   });
+});
+
+const menuBtn = document.getElementById("menu-btn");
+menuBtn.addEventListener("click", () => {
+  let nav = document.getElementById("nav");
+  nav.classList.remove("hidden");
+});
+const closeBtn = document.getElementById("close-btn");
+closeBtn.addEventListener("click", () => {
+  let nav = document.getElementById("nav");
+  nav.classList.add("hidden");
 });
